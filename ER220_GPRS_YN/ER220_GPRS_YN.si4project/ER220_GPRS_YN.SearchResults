@@ -1,0 +1,21 @@
+---- FormatBCD Matches (20 in 5 files) ----
+ExtModules.c (E:\ER220L\ER260_China\EOSCLCD) line 1262 : //**WORD FormatBCD( char*  to, BCD *bcd, WORD Format)***
+ExtModules.c (E:\ER220L\ER260_China\EOSCLCD) line 1287 : WORD FormatBCD( char*  to, BCD *bcd, WORD Format)
+FormatAmt in Format.c (E:\ER220L\ER260_China\EOSCLCD) :     FormatBCD(to, amt, format);
+FormatQty in Format.c (E:\ER220L\ER260_China\EOSCLCD) :     FormatBCD(to, qty, (BCDLEN * 2) + 0x6400);
+DispAmtStr in Format.c (E:\ER220L\ER260_China\EOSCLCD) :     FormatBCD(SysBuf+sizeof(SysBuf) - 2, amt, format);
+king.h (E:\ER220L\ER260_China\EOSCLCD) line 377 : extern WORD FormatBCD(char *toA0, BCD *fromA1, WORD fmtR1);	    /* () make ascii from BCD */
+FormatBCD_DEC in USBDiskApp.c (E:\ER220L\ER260_China\EOSCLCD) :     FormatBCD(to, &sBCD,(BCDLEN * 2) + 0x6400);
+usbPrintTotal in USBDiskApp.c (E:\ER220L\ER260_China\EOSCLCD) : 		FormatBCD(CCDBuff+i, &ApplVar.Total.Cc,(BCDLEN * 2) + 0x6400);
+usbPrintTotal in USBDiskApp.c (E:\ER220L\ER260_China\EOSCLCD) : 		FormatBCD(CCDBuff+i, &ApplVar.Total.Qty,(BCDLEN * 2) + 0x6400);
+usbPrintTotal in USBDiskApp.c (E:\ER220L\ER260_China\EOSCLCD) : 		FormatBCD(CCDBuff+i, &ApplVar.Total.RetQty,(BCDLEN * 2) + 0x6400);
+usbPrintTotal in USBDiskApp.c (E:\ER220L\ER260_China\EOSCLCD) : 					FormatBCD(CCDBuff+i, &ApplVar.Total.Amt,(BCDLEN * 2) + 0x6400);
+FormatToCSV in USBDiskApp.c (E:\ER220L\ER260_China\EOSCLCD) :         i = FormatBCD(ProgLineMes+BCDLEN * 2, &bcdType,(BCDLEN * 2) + 0x6400);
+FormatToCSV in USBDiskApp.c (E:\ER220L\ER260_China\EOSCLCD) :         i = FormatBCD(ProgLineMes+BCDLEN * 2, &bcdType,(BCDLEN * 2) + 0x6400);
+FormatToCSV in USBDiskApp.c (E:\ER220L\ER260_China\EOSCLCD) :         i = FormatBCD(ProgLineMes+BCDLEN * 2, &bcdType,(BCDLEN * 2) + 0x6400);
+FormatToCSV in USBDiskApp.c (E:\ER220L\ER260_China\EOSCLCD) :         i = FormatBCD(ProgLineMes+BCDLEN * 2, &bcdType,(BCDLEN * 2) + 0x6400);
+FormatToCSV in USBDiskApp.c (E:\ER220L\ER260_China\EOSCLCD) :         i = FormatBCD(ProgLineMes+BCDLEN * 2, &bcdType,(BCDLEN * 2) + 0x6400);
+usbPrintTotal in ViewReport.c (E:\ER220L\ER260_China\EOSCLCD) : 		FormatBCD(CCDBuff+i, &ApplVar.Total.Cc,(BCDLEN * 2) + 0x6400);
+usbPrintTotal in ViewReport.c (E:\ER220L\ER260_China\EOSCLCD) : 		FormatBCD(CCDBuff+i, &ApplVar.Total.Qty,(BCDLEN * 2) + 0x6400);
+usbPrintTotal in ViewReport.c (E:\ER220L\ER260_China\EOSCLCD) : 		FormatBCD(CCDBuff+i, &ApplVar.Total.RetQty,(BCDLEN * 2) + 0x6400);
+usbPrintTotal in ViewReport.c (E:\ER220L\ER260_China\EOSCLCD) : //ccr2014-09-03					FormatBCD(CCDBuff+i, &ApplVar.Total.Amt,(BCDLEN * 2) + 0x6400);

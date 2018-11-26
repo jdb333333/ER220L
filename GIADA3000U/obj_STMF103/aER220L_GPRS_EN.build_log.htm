@@ -1,0 +1,188 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.18.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: jdb Administrator, jdb, LIC=UJWMM-X0BKA-UG07Q-NMRPK-X7RGW-GKR2M
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.18
+Toolchain Path:  D:\keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.18.0
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+E:\ER220L\GIADA3000U\GIADA3000U.uvprojx
+Project File Date:  09/25/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\keil5\ARM\ARMCC\Bin'
+Build target 'ER220LGPRS_EN'
+compiling ExtModules.c...
+..\ER260_China\EOSCLCD\bios.h(528): warning:  #47-D: incompatible redefinition of macro "LCD10_SetFlag" (declared at line 29 of "..\STM32F103Driver\USER\inc\led_customer.h")
+  #define LCD10_SetFlag(a)  {}
+..\ER260_China\EOSCLCD\CHNDisp.h(115): warning:  #1295-D: Deprecated declaration RecallScreen - give arg types
+  extern void RecallScreen();
+..\ER260_China\EOSCLCD\exth.h(756): warning:  #1295-D: Deprecated declaration GPRSConnect_TCPIP - give arg types
+  extern 
+YTE GPRSConnect_TCPIP(/*CONSTCHAR *pIP,CONSTCHAR *pPort*/);
+..\ER260_China\EOSCLCD\MessageEN_C.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\ER260_China\EOSCLCD\ExtModules.c(121): warning:  #940-D: missing return statement at end of non-void function "JFeed"
+  }
+..\ER260_China\EOSCLCD\ExtModules.c(610): warning:  #111-D: statement is unreachable
+          break;
+..\ER260_China\EOSCLCD\ExtModules.c(615): warning:  #111-D: statement is unreachable
+          break;
+..\ER260_China\EOSCLCD\ExtModules.c(621): warning:  #111-D: statement is unreachable
+          break;
+..\ER260_China\EOSCLCD\ExtModules.c(745): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "BYTE *"
+          mDispStringXY(SysBuf,
+WD_X,pwdY);
+..\ER260_China\EOSCLCD\ExtModules.c(833): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "BYTE *"
+          mDispStringXY(SysBuf,mmL,pwdY+pwdLp);
+..\ER260_China\EOSCLCD\ExtModules.c(897): warning:  #940-D: missing return statement at end of non-void function "SetPassword"
+  }
+..\ER260_China\EOSCLCD\ExtModules.c(792): warning:  #177-D: variable "sLen" was declared but never referenced
+      short pwdY,sLen,kCode,sCounter,sCou1st,mmL,oldL,pwdLp;
+..\ER260_China\EOSCLCD\ExtModules.c(792): warning:  #177-D: variable "oldL" was declared but never referenced
+      short pwdY,sLen,kCode,sCounter,sCou1st,mmL,oldL,pwdLp;
+..\ER260_China\EOSCLCD\ExtModules.c(907): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "const uint8_t *"
+      
+ispSt0(Msg[XIAOJI].str);//??示小?? //RG-DISPLAY
+..\ER260_China\EOSCLCD\ExtModules.c(920): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const uint8_t *"
+      DispStrXY(strTotal,subLen,
+TATELINE);//??示小??  //RG-DISPLAY
+..\ER260_China\EOSCLCD\ExtModules.c(935): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const uint8_t *"
+      
+ispSt0C(sDisp);//ScreenFeed(1);
+..\ER260_China\EOSCLCD\ExtModules.c(970): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const uint8_t *"
+  	DispStrXY(sDisp,x,y);
+..\ER260_China\EOSCLCD\ExtModules.c(979): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const uint8_t *"
+  	DispStrXY(sDisp,x,y);
+..\ER260_China\EOSCLCD\ExtModules.c(990): warning:  #940-D: missing return statement at end of non-void function "InitPrinterChar"
+  }
+..\ER260_China\EOSCLCD\ExtModules.c(1093): warning:  #177-D: variable "tmp3" was declared but never referenced
+      BYTE tmp1,tmp2,tmp3,tmp,cfg;
+..\ER260_China\EOSCLCD\ExtModules.c(1154): warning:  #177-D: variable "tmp3" was declared but never referenced
+      BYTE tmp1,tmp2,tmp3,tmp,cfg;
+..\ER260_China\EOSCLCD\ExtModules.c(1291): warning:  #144-D: a value of type "char *" cannot be used to initialize an entity of type "uint8_t *"
+      
+YTE *q = to;
+..\ER260_China\EOSCLCD\ExtModules.c(1505): warning:  #42-D: operand types are incompatible ("uint8_t *" and "char *")
+          while (q!= to)
+..\ER260_China\EOSCLCD\ExtModules.c(1750): warning:  #144-D: a value of type "char *" cannot be used to initialize an entity of type "uint8_t *"
+      
+YTE      *too=to;
+..\ER260_China\EOSCLCD\ExtModules.c(1751): warning:  #144-D: a value of type "char *" cannot be used to initialize an entity of type "uint8_t *"
+      
+YTE      *from1=from;
+..\ER260_China\EOSCLCD\ExtModules.c(1780): warning:  #144-D: a value of type "char *" cannot be used to initialize an entity of type "uint8_t *"
+      
+YTE      *too=to;
+..\ER260_China\EOSCLCD\ExtModules.c(1781): warning:  #144-D: a value of type "char *" cannot be used to initialize an entity of type "uint8_t *"
+      
+YTE      *from1=from;
+..\ER260_China\EOSCLCD\ExtModules.c(2536): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+                              strcpy(ProgLineMes,ApplVar.Plu.Name);
+..\ER260_China\EOSCLCD\ExtModules.c(2548): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+                              strcpy(ProgLineMes,ApplVar.Dept.Name);
+..\ER260_China\EOSCLCD\ExtModules.c(2558): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+                              strcpy(ProgLineMes,ApplVar.Disc.Name);
+..\ER260_China\EOSCLCD\ExtModules.c(2575): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+                              strcpy(
+crollBuf(items),FormatAmtStr(ProgLineMes, &sAmt, 
+CREENWD));
+..\ER260_China\EOSCLCD\ExtModules.c(2666): warning:  #177-D: variable "i" was declared but never referenced
+      int len,i;
+..\ER260_China\EOSCLCD\ExtModules.c(2814): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const uint8_t *"
+          DispStrXY(EntryBuffer + 
+NTRYSIZE - 
+CREENWD - 1 + x,x,y);
+..\ER260_China\EOSCLCD\ExtModules.c(2842): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "const uint8_t *"
+              DispStrXY(Msg[
+AI].str ,
+CREENWD-3,y);
+..\ER260_China\EOSCLCD\ExtModules.c(2844): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "const uint8_t *"
+              DispStrXY(Msg[
+UAN].str ,
+CREENWD-3,y);
+..\ER260_China\EOSCLCD\ExtModules.c(2864): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+      strcpy(ListRecord.Name,ApplVar.TXT.Header[ListRecord.Number]);
+..\ER260_China\EOSCLCD\ExtModules.c(2868): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+      strcpy(ListRecord.Name,ApplVar.TXT.Trailer[ListRecord.Number]);
+..\ER260_China\EOSCLCD\ExtModules.c(2872): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+      strcpy(ListRecord.Name,ApplVar.TXT.SlipHeader[ListRecord.Number]);
+..\ER260_China\EOSCLCD\ExtModules.c(2916): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+      strcpy(ListRecord.Name,ApplVar.TXT.ReportType[ListRecord.Number]);
+..\ER260_China\EOSCLCD\ExtModules.c(2947): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+          if (!SetPassword(Msg[
+ETMGPWD].str,ApplVar.AP.ModePwd.PwdMG))
+..\ER260_China\EOSCLCD\ExtModules.c(2956): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "const uint8_t *"
+              
+ispSt1C(Msg[DYJGUAN].str);//RG-DISPLAY
+..\ER260_China\EOSCLCD\ExtModules.c(2965): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "const uint8_t *"
+              
+ispSt1C(Msg[DYJKAI].str);//RG-DISPLAY
+..\ER260_China\EOSCLCD\ExtModules.c(2977): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "const uint8_t *"
+              
+ispSt1C(Msg[PSHMSHI].str);//RG-DISPLAY
+..\ER260_China\EOSCLCD\ExtModules.c(3009): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                      
+JPrint(0,DispQtyStr(ApplVar.Plu.Name, &ApplVar.Plu.Inventory,PRTLEN));
+..\ER260_China\EOSCLCD\ExtModules.c(3253): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "const uint8_t *"
+          DispStrXY(Msg[
+NMA].str,0,0);
+..\ER260_China\EOSCLCD\ExtModules.c(3254): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const uint8_t *"
+          DispStrXY(SysBuf,strlen(Msg[
+NMA].str),0);//   DisplayDecXY(ApplVar.NumberEntry,SCREENWD-5,0,5);
+..\ER260_China\EOSCLCD\ExtModules.c(3255): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "const uint8_t *"
+          DispStrXY(Msg[
+GNJIAN].str,0,1);
+..\ER260_China\EOSCLCD\ExtModules.c(3274): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const uint8_t *"
+              DispStrXY(SysBuf,0,1);
+..\ER260_China\EOSCLCD\ExtModules.c(3275): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "const uint8_t *"
+              DispStrXY(Msg[
+CHBJI].str,0,
+CREENLN-2);
+..\ER260_China\EOSCLCD\ExtModules.c(3239): warning:  #177-D: variable "newKeyFunc" was declared but never referenced
+      WORD newKeyFunc;
+..\ER260_China\EOSCLCD\ExtModules.c(3509): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const uint8_t *"
+          DispStrXY(EntryBuffer + 
+NTRYSIZE - 
+CREENWD - 1 + x,x,y);
+..\ER260_China\EOSCLCD\ExtModules.c: 53 warnings, 0 errors
+linking...
+Program Size: Code=228800 RO-data=95124 RW-data=1364 ZI-data=117844  
+FromELF: creating hex file...
+".\obj_STMF103\aER220L_GPRS_EN.axf" - 0 Error(s), 51 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  E:\ER220L\GIADA3000U\RTE
+  D:\keil5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Build Time Elapsed:  00:00:28
+</pre>
+</body>
+</html>
