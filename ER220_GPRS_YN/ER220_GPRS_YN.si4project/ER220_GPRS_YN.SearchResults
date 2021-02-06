@@ -1,21 +1,13 @@
----- FormatBCD Matches (20 in 5 files) ----
-ExtModules.c (E:\ER220L\ER260_China\EOSCLCD) line 1262 : //**WORD FormatBCD( char*  to, BCD *bcd, WORD Format)***
-ExtModules.c (E:\ER220L\ER260_China\EOSCLCD) line 1287 : WORD FormatBCD( char*  to, BCD *bcd, WORD Format)
-FormatAmt in Format.c (E:\ER220L\ER260_China\EOSCLCD) :     FormatBCD(to, amt, format);
-FormatQty in Format.c (E:\ER220L\ER260_China\EOSCLCD) :     FormatBCD(to, qty, (BCDLEN * 2) + 0x6400);
-DispAmtStr in Format.c (E:\ER220L\ER260_China\EOSCLCD) :     FormatBCD(SysBuf+sizeof(SysBuf) - 2, amt, format);
-king.h (E:\ER220L\ER260_China\EOSCLCD) line 377 : extern WORD FormatBCD(char *toA0, BCD *fromA1, WORD fmtR1);	    /* () make ascii from BCD */
-FormatBCD_DEC in USBDiskApp.c (E:\ER220L\ER260_China\EOSCLCD) :     FormatBCD(to, &sBCD,(BCDLEN * 2) + 0x6400);
-usbPrintTotal in USBDiskApp.c (E:\ER220L\ER260_China\EOSCLCD) : 		FormatBCD(CCDBuff+i, &ApplVar.Total.Cc,(BCDLEN * 2) + 0x6400);
-usbPrintTotal in USBDiskApp.c (E:\ER220L\ER260_China\EOSCLCD) : 		FormatBCD(CCDBuff+i, &ApplVar.Total.Qty,(BCDLEN * 2) + 0x6400);
-usbPrintTotal in USBDiskApp.c (E:\ER220L\ER260_China\EOSCLCD) : 		FormatBCD(CCDBuff+i, &ApplVar.Total.RetQty,(BCDLEN * 2) + 0x6400);
-usbPrintTotal in USBDiskApp.c (E:\ER220L\ER260_China\EOSCLCD) : 					FormatBCD(CCDBuff+i, &ApplVar.Total.Amt,(BCDLEN * 2) + 0x6400);
-FormatToCSV in USBDiskApp.c (E:\ER220L\ER260_China\EOSCLCD) :         i = FormatBCD(ProgLineMes+BCDLEN * 2, &bcdType,(BCDLEN * 2) + 0x6400);
-FormatToCSV in USBDiskApp.c (E:\ER220L\ER260_China\EOSCLCD) :         i = FormatBCD(ProgLineMes+BCDLEN * 2, &bcdType,(BCDLEN * 2) + 0x6400);
-FormatToCSV in USBDiskApp.c (E:\ER220L\ER260_China\EOSCLCD) :         i = FormatBCD(ProgLineMes+BCDLEN * 2, &bcdType,(BCDLEN * 2) + 0x6400);
-FormatToCSV in USBDiskApp.c (E:\ER220L\ER260_China\EOSCLCD) :         i = FormatBCD(ProgLineMes+BCDLEN * 2, &bcdType,(BCDLEN * 2) + 0x6400);
-FormatToCSV in USBDiskApp.c (E:\ER220L\ER260_China\EOSCLCD) :         i = FormatBCD(ProgLineMes+BCDLEN * 2, &bcdType,(BCDLEN * 2) + 0x6400);
-usbPrintTotal in ViewReport.c (E:\ER220L\ER260_China\EOSCLCD) : 		FormatBCD(CCDBuff+i, &ApplVar.Total.Cc,(BCDLEN * 2) + 0x6400);
-usbPrintTotal in ViewReport.c (E:\ER220L\ER260_China\EOSCLCD) : 		FormatBCD(CCDBuff+i, &ApplVar.Total.Qty,(BCDLEN * 2) + 0x6400);
-usbPrintTotal in ViewReport.c (E:\ER220L\ER260_China\EOSCLCD) : 		FormatBCD(CCDBuff+i, &ApplVar.Total.RetQty,(BCDLEN * 2) + 0x6400);
-usbPrintTotal in ViewReport.c (E:\ER220L\ER260_China\EOSCLCD) : //ccr2014-09-03					FormatBCD(CCDBuff+i, &ApplVar.Total.Amt,(BCDLEN * 2) + 0x6400);
+---- jdb Matches (12 in 3 files) ----
+appl.h (E:\ER220L\ER260_China\EOSCLCD) line 2935 : #define PREHEADER	0 //jdb2018-10-08不预打印票头
+ExtModules.c (E:\ER220L\ER260_China\EOSCLCD) line 1393 : 		#if 0//jdb2018-10-08 不对数据进行分隔
+Tax.c (E:\ER220L\ER260_China\EOSCLCD) line 144 : 	char strcost[8][64];//jdb2018-09-27 保存税额
+Tax.c (E:\ER220L\ER260_China\EOSCLCD) line 145 : 	BCD tmpcost[8];//jdb2018-09-27
+Tax.c (E:\ER220L\ER260_China\EOSCLCD) line 146 : 	BCD tmpsubtotal = ZERO;//jdb2018-09-27
+Tax.c (E:\ER220L\ER260_China\EOSCLCD) line 252 : 												#if 0//jdb2018-09-258不打印小计
+Tax.c (E:\ER220L\ER260_China\EOSCLCD) line 279 : 																	//jdb2018-09-28不打印
+Tax.c (E:\ER220L\ER260_China\EOSCLCD) line 281 : 																	//jdb2018-09-27 保存销售额
+Tax.c (E:\ER220L\ER260_China\EOSCLCD) line 285 : 																	//jdb2018-09-28不打印
+Tax.c (E:\ER220L\ER260_China\EOSCLCD) line 287 : 																	//jdb2018-09-27 保存净销售额
+Tax.c (E:\ER220L\ER260_China\EOSCLCD) line 299 :                             //jdb2018-09-27 保存税额
+Tax.c (E:\ER220L\ER260_China\EOSCLCD) line 341 : 			//jdb2018-09-27 打印总净额和税额
